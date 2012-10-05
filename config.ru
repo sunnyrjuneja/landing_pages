@@ -1,4 +1,4 @@
 require './app'
 require 'slim'
 
-run Sinatra::Application
+run LandingPages
