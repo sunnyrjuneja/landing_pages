@@ -31,4 +31,9 @@ class LandingPages < Sinatra::Base
     @results = @contacts.to_a()
     JSON.dump(@results)
   end
+
+  get "/destroy" do
+    $collection.remove
+    redirect "/"
+  end
 end
